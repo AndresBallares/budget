@@ -1,0 +1,17 @@
+Nav {
+    background: lightblue;
+    display: grid;
+    grid-template-columns: 2fr;
+    padding: 1em;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 7px;
+    
+}
+
+h1 {
+    color: white;
+    padding-left: 350px;
+    font-size: 40px;
+    font-family: serif;
+    
+}
