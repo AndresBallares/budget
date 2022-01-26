@@ -1,8 +1,8 @@
-.details h3 p {
-    display: flex;
-    flex-direction: column;
+article  {
+    
+    padding-left: 800px;
     align-items: center;
     justify-content: center;
     height: 45vh;
-    cursor: pointer;
+    
 }

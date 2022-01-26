@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-
+import { Container, Table } from 'react-bootstrap';
 function TransactionDetails() {
 const URL = process.env.REACT_APP_API_URL;
 //ensure that whatever is typed as default in state is the same data type as what you are fetching
@@ -27,32 +27,22 @@ const handleDelete = () => {
 return (
     <article className="details">
       <h3>Transaction Details</h3>
-      <p>`${activity.amount}'</p>
-      <h3>
-        <span>
-          <p>Transaction date</p> 
-        </span>{" "}
-        {activity.date}
-      </h3>
+      <p>${activity.amount}</p>
+      <h3>Transaction date</h3> 
+      <p>{activity.date}</p>
       <h3>Category</h3>
       <p>{activity.category}</p>
-      <div className="showNavigation">
-        <div>
-          {" "}
-          <Link to={`/`}>
-            <button>Back</button>
-          </Link>
-        </div>
-        <div>
-          {" "}
-          <Link to={`/transaction/${index}/edit`}>
-            <button>Edit</button>
-          </Link>
-        </div>
-        <div>
-          {" "}
-          <button onClick={handleDelete}>Delete</button>
-        </div>
+      <br />
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <Link to={'/'}>
+          <button type="button" class="btn btn-primary">Back</button>
+        </Link>
+        <Link to={`/transaction/${index}/edit`}>
+          <button type="button" class="btn btn-primary">Edit</button>
+        </Link>
+        <Link to={'/transaction/${index}/edit'}>
+          <button onClick={handleDelete} type="button" class="btn btn-primary">Delete</button>
+        </Link>
       </div>
     </article>
   );
