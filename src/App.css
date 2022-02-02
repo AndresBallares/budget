@@ -20,13 +20,10 @@
   grid-template-rows: 2fr;
 } */
 
-main.body {
-  width: 90%;
-  margin: auto;
-}
-tbody {
+
+/* tbody {
   align-items: center;
   padding-right: 800px;
   margin-right: 600px;
   border-left: blue;
-}
+} */

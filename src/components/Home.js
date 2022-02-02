@@ -23,8 +23,8 @@ function Home () {
         return (
             <div className="balance">
                 <span>
-                    <h3>Account Balance</h3>
-                    <p>${balance}</p>
+                    <h2>Account Balance</h2>
+                    <h3>${balance}</h3>
                 </span>
                     <table>
                         <tbody>

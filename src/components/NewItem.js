@@ -95,7 +95,7 @@ function NewItem ()  {
 
                 <br />
                 
-                <input type="submit" value="CREATE NEW ITEM" /> 
+                <button type="submit">CREATE NEW ITEM</button>
             
             </form>
         )
